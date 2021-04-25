@@ -1,0 +1,73 @@
+hr{
+    border-color:#aaa;
+    box-sizing:border-box;
+    width:100%;  
+}
+
+#card-avaliacao {
+    border: none;
+}
+
+#card-novidades {
+    border: none;
+}
+
+.btn-sm {
+    border-radius: 50px;
+}
+
+.card-avalicao {
+    max-width: 540px;
+    border: none;
+}
+
+.card-dest {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.div-img-novidades{
+    padding-right: 0px;
+}
+
+.div-user-avaliacao{
+    padding-right: 0px;
+}
+
+.editorial {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.icon-twitter {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-user-avaliacao {
+    width: 100%;
+    height: auto;
+}
+
+.lancamentos {
+    margin-top: -70px;
+}
+
+.lancamentos-cont {
+    margin-top: 55px;
+}
+
+.profile-pic img {
+    border-radius: 50%
+}
+
+.redes-sociais {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 990px) {
+    .sobre {
+      margin-top: 30px;
+    }
+  }
+
