@@ -2,402 +2,664 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="images/logo/favicon.png" />
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
-  
-  
+  <title>ZoneFlix</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- Chamo o arquivo CSS do Bootstrap -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
+  <!--Chamo o arquivo CSS do Scrolling da navbar -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
-  
+  <!-- Chamo o arquivo CSS personalizado -->
   <link href="css/style.css" rel="stylesheet">
+  <!-- Chamo o arquivo CSS da fonte Awesome -->
   <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
-  
-  
 
 </head>
 
 <body id="page-top">
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+  <!-- Início da navbar -->
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top" id="mainNav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img style="height: 80px; width: 240px;" src="images/logo/facebook_cover_photo_1.png" alt="">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="font-size: 20px;">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#page-top">Lançamentos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            <a class="nav-link js-scroll-trigger" href="#destaque" id="btnDestaque">Em destaque</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#entrevistas">Entrevistas & Making of</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#novidades">Novidades</a>
           </li>
         </ul>
-      </div>
-    </div>
-  </nav>
+        <!-- ul vazia para colocar os menus da navbar no centro da página -->
+        <ul class="navbar-nav ml-auto">
+        </ul>
+        <div class="wrapper ">
+          <!-- Caixa de pesquisa, lembrando que o comando filtra apenas o conteudo da div DESTAQUES -->
+          <div class="search_box">
+            <div class="search_field">
+              <input type="text" class="input" id="navFiltro" placeholder="Gêneros de filme">
+              <i class="fas fa-search"></i>
+            </div>
+          </div><!-- /search box -->
+        </div><!-- /wrapper -->
+      </div><!-- /collapse -->
+    </div><!-- /container fluid -->
+  </nav><!-- Fim da navbar -->
 
-  <header class="bg-secondary text-white">
+  <header class=" text-white">
     <div class="container-fluid text-center">
       <h1 class="lancamentos">Lançamentos</h1>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <div id="caroulselLancamentos" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators li">
+          <li data-target="#caroulselLancamentos" data-slide-to="0" class="active"></li>
+          <li data-target="#caroulselLancamentos" data-slide-to="1"></li>
+          <li data-target="#caroulselLancamentos" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner lancamentos-cont">
           <div class="carousel-item active">
             <div class="row">
-              <div class="col-md-6">
-                <iframe width="100%" height="345" src="https://www.youtube.com/embed/wDtznepAV3Y" frameborder="0"
-                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class="col-lg-6 col-md-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://www.youtube.com/embed/UM1gXYWO1mc" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="col-md-6">
-                <h2 style="text-align: left;">Lançamentos</h2>
-                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                  not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                  unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-                  of Lorem Ipsum.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-6">
-                <iframe width="100%" height="345" src="https://www.youtube.com/embed/wDtznepAV3Y" frameborder="0"
-                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-6">
-                <h2 style="text-align: left;">Lançamentos</h2>
-                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                  not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                  unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-                  of Lorem Ipsum.</p>
+              <div class="col-lg-6 col-md-12">
+                <h2 style="text-align: left;">Mortal Kombat</h2>
+                <p style="text-align: justify; font-size: 20px; margin-top: 30px;">Em Mortal Kombat, Shang Tsung,
+                  imperador da Exoterra, envia seu melhor guerreiro, Sub-Zero, para assassinar o jovem Cole Young.
+                  Temendo pela segurança da família, Cole vai em busca de Sonya Blade seguindo a indicação de Jax, um
+                  major das Forças Especiais, que tem a mesma estranha marca de dragão com a qual Cole nasceu. Logo, ele
+                  se vê no templo do Lorde Raiden, um Deus Ancião e guardião do Plano Terreno, que abriga todos que
+                  possuem a marca. No templo, ele treina com os experientes guerreiros Liu Kang, Kung Lao e Kano,
+                  enquanto se prepara para lutar contra os inimigos da Exoterra em uma batalha pelo universo. Será que
+                  Cole irá longe o suficiente para desbloquear sua arcana - o imenso poder da sua alma - a tempo de
+                  salvar não apenas a família, mas interromper os planos de Shang Tsung de uma vez por todas?</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-              <div class="col-md-6">
-                <iframe width="100%" height="345" src="https://www.youtube.com/embed/wDtznepAV3Y" frameborder="0"
-                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class="col-lg-6 col-md-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://www.youtube.com/embed/5suJxv2YcL4" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="col-md-6">
-                <h2 style="text-align: left;">Lançamentos</h2>
-                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                  unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                  not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                  unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-                  of Lorem Ipsum.</p>
+              <div class="col-lg-6 col-md-12">
+                <h2 style="text-align: left;">Anônimo</h2>
+                <p style="text-align: justify; font-size: 20px; margin-top: 30px;">Em Anônimo, Hutch Mansell (Bob
+                  Odenkirk) é um pacato pai e marido que sempre arca com as injustiças da vida, sem revidar. Quando dois
+                  ladrões invadem sua casa, Hutch se recusa a defender a si mesmo e sua família na esperança de evitar
+                  qualquer violência, desapontando seus familiares com sua passividade. As consequências do incidente
+                  acabam despertando uma raiva latente em Hutch, desencadeando instintos adormecidos e impulsionando-o
+                  em um caminho brutal que irá trazer à tona segredos sombrios e habilidades letais.</p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </header>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://www.youtube.com/embed/BIAM_1SuzkM" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <h2 style="text-align: left;">Assalto ao Banco da Espanha</h2>
+                <p style="text-align: justify; font-size: 20px; margin-top: 30px;">Em Assalto ao Banco da Espanha,
+                  acompanhamos Thom Laybrick (Freddie Highmore), um brilhante engenheiro que encontra-se estagnado na
+                  carreira. Quando Walter (Liam Cunningham), um caçador de tesouros, o convida para se unir a um grupo
+                  de ladrões que pretendem realizar um assalto ao Banco da Espanha, surpreendentemente ele diz sim a
+                  proposta. Calculado em cada detalhe, o roubo se torna uma incessante luta contra o tempo para que
+                  consigam ter êxito em meio à Copa do Mundo em que a Espanha disputa a final.</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /Carousel-inner -->
+      </div><!-- /Carousel -->
+    </div><!-- /Container-fluid -->
+  </header><!-- /header -->
 
-  <section id="about">
+  <section id="destaque">
     <div class="container">
       <div class="row">
+        <!-- Início da parte dos destaques -->
         <div class="col-lg-12 mx-auto">
-          <h2 class="d-inline">Em destaque</h2>
-          <div class="dropdown d-inline" style="float: right;">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          <h2 class="d-inline text-white">Em destaque</h2>
+          <!-- Div com botão responsável por filtrar as categorias de filmes -->
+          <div class="dropdown" style="float: right;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCategoria"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown button
+              Categoria: Todos
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item filter-destaque active" type="button" id="todos" value="Todos">Todos</button>
+              <button class="dropdown-item filter-destaque" type="button" id="terror" value="Terror">Terror</button>
+              <button class="dropdown-item filter-destaque" type="button" id="acao" value="Ação">Ação</button>
+              <button class="dropdown-item filter-destaque" type="button" id="aventura"
+                value="Aventura">Aventura</button>
+              <button class="dropdown-item filter-destaque" type="button" id="romance" value="Romance">Romance</button>
             </div>
-          </div>
-          <div class="card-deck card-dest">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div><!-- Fim da div com botão de filtro de categoria -->
+          <div class="card-dest">
+            <div class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+              Nenhum resultado encontrado.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="row" id="divDestaques">
+              <!-- Início dos cartões padrões, ou seja, aqueles que irão aparecer sempre na tela -->
+              <div class="card card-destaque terror col-sm-6 col-md-4 col-lg-3" value="teste">
+                <img class="card-img-top" src="images/destaques/veronica.jpg" alt="Card image cap">
               </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <div class="card card-destaque acao col-sm-6 col-md-4 col-lg-3">
+                <img class="card-img-top" src="images/destaques/assalto-ao-banco-da-espanha.jpg" alt="Card image cap">
               </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <div class="card card-destaque romance col-sm-6 col-md-4 col-lg-3">
+                <img class="card-img-top" src="images/destaques/a-teoria-de-tudo.jpg" alt="Card image cap">
               </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <div class="card card-destaque aventura col-sm-6 col-md-4 col-lg-3">
+                <img class="card-img-top" src="images/destaques/jumanji.jpg" alt="Card image cap">
+              </div><!-- Fim dos cartões padrões -->
+              <!-- Início dos cartões ocultos -->
+              <div class="d-none ocultar-destaques card card-destaque terror col-sm-6 col-md-4 col-lg-3">
+                <img class="card-img-top" src="images/destaques/getout.jpg" alt="Card image cap">
               </div>
+              <div class="d-none ocultar-destaques card card-destaque acao col-sm-6 col-md-4 col-lg-3">
+                <img class="card-img-top" src="images/destaques/godzilla-vs-kong.jpg" alt="Card image cap">
+              </div>
+              <div class="d-none ocultar-destaques card card-destaque romance col-sm-6 col-md-4 col-lg-3">
+                <img class="card-img-top" src="images/destaques/a-bela-e-a-fera.jpg" alt="Card image cap">
+              </div>
+              <div class="d-none ocultar-destaques card card-destaque aventura col-sm-6 col-md-4 col-lg-3">
+                <img class="card-img-top" src="images/destaques/thor.jpg" alt="Card image cap">
+              </div><!-- Fim dos cartões ocultos -->
             </div>
-          </div>
-          <button type="button" class="btn btn-secondary" style="float: right;">Secondary</button>
-        </div>
-      </div>
+          </div><!-- /cad-dest -->
+          <!-- Botão responsável por mostrar/esconder os cartões ocultos da section DESTAQUES -->
+          <button type="button" class="btn btn-secondary" id="expandirDestaques" onclick="mostrarMaisMenosDestaques()"
+            style="float: right; margin-bottom: 60px;">Mostrar Mais</button>
+        </div><!-- Fim da parte dos destaques -->
+      </div><!-- /row -->
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2 class="d-inline">Últimas avaliações</h2>
-          <div class="card-deck card-dest">
-            <div class="card mb-3 card-avaliacao" id="card-avaliacao">
-              <div class="row g-0">
-                <div class="col-md-4 div-user-avaliacao">
-                  <div class="profile-pic"><img class="img-user-avaliacao" src="https://i.imgur.com/Mcd6HIg.jpg"></div>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="padding: 10px 0px 0px 0px;">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.
-                    </p>
-                    <p class="card-text">
-                    <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                    <small class="text-muted d-inline">24/04/2021</small>
-                    </p>
+          <h2 class="d-inline text-white">Últimas avaliações</h2>
+          <div class="card-dest">
+            <div class="row">
+              <!-- Início dos cartões padrões -->
+              <div class="card mb-3 card-avaliacao col-sm-8 col-md-6 col-lg-4 text-white" id="card-avaliacao">
+                <div class="row g-0">
+                  <div class="col-md-4 div-user-avaliacao">
+                    <div class="profile-pic"><img class="img-user-avaliacao" src="images/avaliacoes/user.jpg"></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                      <h5 class="card-title">Julio Barbosa</h5>
+                      <p class="card-text">
+                        FILME MUITO BOM EFEITOS ESPECIAIS DE PRIMEIRA, NOTA 10,0
+                      </p>
+                      <p class="card-text">
+                      <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                          class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                      <small class="text-muted d-inline text-white">14/04/2021</small>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card mb-3 card-avaliacao" id="card-avaliacao">
-              <div class="row g-0">
-                <div class="col-md-4 div-user-avaliacao">
-                  <div class="profile-pic"><img class="img-user-avaliacao" src="https://i.imgur.com/Mcd6HIg.jpg"></div>
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="padding: 10px 0px 0px 0px;">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.
-                    </p>
-                    <p class="card-text">
-                    <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                    <small class="text-muted d-inline">24/04/2021</small>
-                    </p>
+              <div class="card mb-3 card-avaliacao col-sm-8 col-md-6 col-lg-4 text-white" id="card-avaliacao">
+                <div class="row g-0">
+                  <div class="col-md-4 div-user-avaliacao">
+                    <div class="profile-pic"><img class="img-user-avaliacao" src="images/avaliacoes/user.jpg"></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                      <h5 class="card-title">Pedro Correa</h5>
+                      <p class="card-text">
+                        Filme ótimo... mas me pergunto se não dará problema Asgard viver em Midcard.
+                      </p>
+                      <p class="card-text">
+                      <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                          class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                      <small class="text-muted d-inline text-white">17/03/2021</small>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="card mb-3 card-avaliacao" id="card-avaliacao">
-              <div class="row g-0">
-                <div class="col-md-4 div-user-avaliacao">
-                  <div class="profile-pic"><img class="img-user-avaliacao" src="https://i.imgur.com/Mcd6HIg.jpg"></div>
+              <div class="card mb-3 card-avaliacao col-sm-8 col-md-6 col-lg-4 text-white" id="card-avaliacao">
+                <div class="row g-0">
+                  <div class="col-md-4 div-user-avaliacao">
+                    <div class="profile-pic"><img class="img-user-avaliacao" src="images/avaliacoes/user.jpg"></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                      <h5 class="card-title">Wilmar</h5>
+                      <p class="card-text">
+                        Me falaram muito bem deste sait que tinha muitos filmes bom e series
+                      </p>
+                      <p class="card-text">
+                      <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                          class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                      <small class="text-muted d-inline text-white">19/02/2020</small>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="padding: 10px 0px 0px 0px;">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.
-                    </p>
-                    <p class="card-text">
-                    <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
-                        class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                    <small class="text-muted d-inline">24/04/2021</small>
-                    </p>
+              </div><!-- Fim dos cartões padão -->
+              <!-- Início dos cartões ocultos -->
+              <div class="d-none ocultar-avaliacao card mb-3 card-avaliacao col-sm-8 col-md-6 col-lg-4 text-white"
+                id="card-avaliacao">
+                <div class="row g-0">
+                  <div class="col-md-4 div-user-avaliacao">
+                    <div class="profile-pic"><img class="img-user-avaliacao" src="images/avaliacoes/user.jpg"></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                      <h5 class="card-title">Claudemir</h5>
+                      <p class="card-text">
+                        Gosto muito bons filmes e com qualidades. Parabens.
+                      </p>
+                      <p class="card-text">
+                      <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                          class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                      <small class="text-muted d-inline text-white">05/01/2020</small>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-secondary" style="float: right;">Secondary</button>
+              <div class="d-none ocultar-avaliacao card mb-3 card-avaliacao col-sm-8 col-md-6 col-lg-4 text-white"
+                id="card-avaliacao">
+                <div class="row g-0">
+                  <div class="col-md-4 div-user-avaliacao">
+                    <div class="profile-pic"><img class="img-user-avaliacao" src="images/avaliacoes/user.jpg"></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                      <h5 class="card-title">Maria Heloisa</h5>
+                      <p class="card-text">
+                        Pq meu celular .não estar pegando os filmes que estão na ZoneFlix?
+                      </p>
+                      <p class="card-text">
+                      <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                          class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                      <small class="text-muted d-inline text-white">17/04/2019</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none ocultar-avaliacao card mb-3 card-avaliacao col-sm-8 col-md-6 col-lg-4 text-white"
+                id="card-avaliacao">
+                <div class="row g-0">
+                  <div class="col-md-4 div-user-avaliacao">
+                    <div class="profile-pic"><img class="img-user-avaliacao" src="images/avaliacoes/user.jpg"></div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                      <h5 class="card-title">Sérgio Barbosa</h5>
+                      <p class="card-text">
+                        Muito bom esse filme e obrigado por proporcionar essa possibilidade grátis. Abraços.
+                      </p>
+                      <p class="card-text">
+                      <div class="d-inline"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                          class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                      <small class="text-muted d-inline text-white">02/06/2019</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- Fim dos cartões ocultos -->
+            </div><!-- /row -->
+          </div><!-- /card-dest -->
+          <!-- Botão responsável por mostrar/ocultar os cartões ocultos -->
+          <button type="button" class="btn btn-secondary" id="expandirAvaliacoes" onclick="mostrarMaisMenosAvaliacoes()"
+            style="float: right;">Mostrar Mais</button>
         </div>
-      </div>
-    </div>
-  </section>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section><!-- /destaque -->
 
-  <section id="services" class="bg-light">
-    <div class="container">
+  <section id="entrevistas">
+    <div class="container text-white">
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>Entrevistas & Making of</h2>
-          <div class="card-deck card-dest">
-            <div class="card">
-              <iframe width="100%" height="250" src="https://www.youtube.com/embed/wDtznepAV3Y" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+          <div class="card-dest">
+            <div class="row">
+              <!-- Início dos cartões padrões -->
+              <div class="card col-sm-8 col-md-6 col-lg-4 card-entrevista">
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/Q57OH-brGOI" frameborder="0"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title"><b>Filme: </b>Jumanji</h5>
+                  <p class="card-text"><b>Diretor: </b>Jake Kasdan</p>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <iframe width="100%" height="250" src="https://www.youtube.com/embed/wDtznepAV3Y" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+              <div class="card col-sm-8 col-md-6 col-lg-4 card-entrevista">
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/25cAPGVj_qs" frameborder="0"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title"><b>Filme: </b>Thor Ragnarok</h5>
+                  <p class="card-text"><b>Diretor: </b>Taika Waititi</p>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <iframe width="100%" height="250" src="https://www.youtube.com/embed/wDtznepAV3Y" frameborder="0"
-                allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+              <div class="card col-sm-8 col-md-6 col-lg-4 card-entrevista">
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/0uJ8vMfk-c4" frameborder="0"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title"><b>Filme: </b>Vindadores Ultimato</h5>
+                  <p class="card-text"><b>Diretor: </b>Joe Russo e Anthony Russo</p>
+                </div>
+              </div><!-- /fim dos cartões padrões -->
+              <!-- Início dos cartões ocultos -->
+              <div class="d-none ocultar-entrevista card col-sm-8 col-md-6 col-lg-4 card-entrevista">
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/yw10ohidGGI" frameborder="0"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title"><b>Filme: </b>Homem de Ferro</h5>
+                  <p class="card-text"><b>Diretor: </b>Jon Favreau</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-secondary" style="float: right;">Secondary</button>
+              <div class="d-none ocultar-entrevista card col-sm-8 col-md-6 col-lg-4 card-entrevista">
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/NdmDFyCH5O4" frameborder="0"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title"><b>Filme: </b>Homem Aranha de Volta ao Lar</h5>
+                  <p class="card-text"><b>Diretor: </b>Jon Watts</p>
+                </div>
+              </div>
+              <div class="d-none ocultar-entrevista card col-sm-8 col-md-6 col-lg-4 card-entrevista">
+                <iframe width="100%" height="250" src="https://www.youtube.com/embed/MnQhoTravPk" frameborder="0"
+                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title"><b>Filme: </b>Homem Aranha 2</h5>
+                  <p class="card-text"><b>Diretor: </b>Sam Raimi</p>
+                </div>
+              </div><!-- Fim dos cartões ocultos -->
+            </div><!-- /row -->
+          </div><!-- /card-dest -->
+          <button type="button" class="btn btn-secondary" id="expandirEntrevistas"
+            onclick="mostrarMaisMenosEntrevistas()" style="float: right;">Mostrar Mais</button>
         </div>
-      </div>
-    </div>
-  </section>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section><!-- /entrevitas -->
 
-  <section id="contact">
-    <div class="container">
+  <section id="novidades">
+    <div class="container text-white">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Novidades</h2>
-          <div class="card mb-3" id="card-novidades">
-            <div class="row g-0">
-              <div class="col-md-4 div-img-novidades">
-                <img style="width: 100%; height: 200px;" src="https://i.imgur.com/Mcd6HIg.jpg">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body" style="padding: 10px 0px 0px 0px;">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                  </p>
-                  <p class="card-text">
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                  </p>
+          <h2 style="margin-bottom: 30px;">Novidades</h2>
+          <div class="row">
+            <!-- Início dos cartões Novidades -->
+            <div class="card mb-3" id="card-novidades">
+              <div class="row g-0">
+                <div class="col-md-4 div-img-novidades">
+                  <img style="width: 100%; height: 200px;" src="images/novidades/nomadland.jpg">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                    <h5 class="card-title">Oscar 2021</h5>
+                    <p class="card-text">
+                      Oscar 2021: veja todos os vencedores da maior premiação do cinema.
+                    </p>
+                    <p class="card-text">
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Ler mais</button>
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Denunciar</button>
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Acessar</button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <hr />
-          <div class="card mb-3" id="card-novidades">
-            <div class="row g-0">
-              <div class="col-md-4 div-img-novidades">
-                <img style="width: 100%; height: 200px;" src="https://i.imgur.com/Mcd6HIg.jpg">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body" style="padding: 10px 0px 0px 0px;">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                  </p>
-                  <p class="card-text">
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                  </p>
+            <!-- Tag hr responsável por criar um linha abaixo do novidade -->
+            <hr />
+            <div class="card mb-3" id="card-novidades">
+              <div class="row g-0">
+                <div class="col-md-4 div-img-novidades">
+                  <img style="width: 100%; height: 200px;" src="images/novidades/crepusculo.jpg">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                    <h5 class="card-title">Crepúsculo</h5>
+                    <p class="card-text">
+                      Crepúsculo: 10 estrelas que você esqueceu que estiveram nos filmes.
+                    </p>
+                    <p class="card-text">
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Ler mais</button>
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Denunciar</button>
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Acessar</button>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <hr />
-          <div class="card mb-3" id="card-novidades">
-            <div class="row g-0">
-              <div class="col-md-4 div-img-novidades">
-                <img style="width: 100%; height: 200px;" src="https://i.imgur.com/Mcd6HIg.jpg">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body" style="padding: 10px 0px 0px 0px;">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                  </p>
-                  <p class="card-text">
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                    <button type="button" class="d-inline btn btn-secondary btn-sm">Secondary</button>
-                  </p>
+            <!-- Tag hr responsável por criar um linha abaixo do novidade -->
+            <hr />
+            <div class="card mb-3" id="card-novidades">
+              <div class="row g-0">
+                <div class="col-md-4 div-img-novidades">
+                  <img style="width: 100%; height: 200px;" src="images/novidades/criminos.jpg">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body" style="padding: 10px 0px 0px 0px;">
+                    <h5 class="card-title">Ataques Cibernéticos</h5>
+                    <p class="card-text">
+                      Criminosos usam filmes do Oscar para roubar informações de usuários
+                    </p>
+                    <p class="card-text">
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Ler mais</button>
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Denunciar</button>
+                      <button type="button" class="d-inline btn btn-secondary btn-sm">Acessar</button>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div><!-- Fim dos cartões Novidades -->
+          </div><!-- /row -->
         </div>
         <div class="col-lg-4 mx-auto">
           <h2 class="sobre">Sobre</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus</p>
+          <p style="text-align: justify; margin-bottom: 30px;">O ZoneFlix é uma plataforma para assistir filmes e séries online grátis! ZoneFlix não armazena filmes, por isso é completamente dentro da lei. ZoneFlix indexa conteúdo(s) encontrado(s) na web automáticamente usando Robots e Inteligência artificial (iA) & API IMDb. O uso do ZoneFlix é totalmente responsabilidade do usuário. A distribuição de filmes é da parte de plataformas como OpenLoad, Google Drive, entre outros. Qualquer violação de direitos autorais, entre em contato com o distribuidor. Em caso de dúvidas ou reclamações sobre conteúdo, entre em contato com a equipe de suporte.</p>
           <h2 class="editorial">Editorial</h2>
-          <p><span class="fa fa-user fa-lg"></span><b> Redação:</b> Pedro Henrique de Sousa</p>
-          <p><span class="fa fa-user fa-lg"></span><b> Redação:</b> Pedro Henrique de Sousa</p>
-          <p><span class="fa fa-user fa-lg"></span><b> Redação:</b> Pedro Henrique de Sousa</p>
+          <p><span class="fa fa-user fa-lg"></span><b> Redação:</b> Igor Miranda Lio Santos</p>
+          <p><span class="fa fa-user fa-lg"></span><b> Edição:</b> Igor Miranda Lio Santos</p>
+          <p><span class="fa fa-user fa-lg"></span><b> Montagem:</b> Igor Miranda Lio Santos</p>
           <h2 class="redes-sociais">redes sociais</h2>
-          <span class="fab fa-facebook-square fa-2x"></span><span class="fab fa-twitter fa-2x icon-twitter"></span><span class="fab fa-instagram fa-2x"></span>
+          <span class="fab fa-facebook-square fa-2x"></span><span class="fab fa-twitter fa-2x icon-twitter"></span><span
+            class="fab fa-instagram fa-2x"></span>
+        </div>
+      </div><!-- /row -->
+    </div><!-- /container -->
+  </section><!-- /novidades -->
+
+  <footer class="footer text-white">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-7">
+          <p class="copyright align-middle" style="margin-top: 2rem;">
+            Copyright © 2021 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas
+          </p>
+        </div>
+        <div class="col-md-5">
+          <a class="navbar-brand"  style="float: right;" href="#">
+            <img style="height: 80px; width: 240px;" src="images/logo/facebook_cover_photo_1.png" alt="">
+          </a>
         </div>
       </div>
     </div>
-
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-    </div>
-    <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
+  <!-- Chamo os arquivos JavaScript do Bootstrap -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
+  <!-- Chamo o plugin do Jquery -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom JavaScript for this theme -->
+  <!-- Chamo o arquivo JavaScript do scrolling da navbar -->
   <script src="js/scrolling-nav.js"></script>
+
+  <!-- Início das funções JavaScripts -->
+  <script>
+
+    // Função responsável por filtrar os cartões DESTAQUES
+    $('.filter-destaque').on('click', function () {
+
+      // Seto o type com o id do botão, ex: terror, ação etc.
+      let type = $(this).attr('id');
+      // Seto o boxes com todas as divs que contenham a classe card-destaque
+      let boxes = $('.card-destaque');
+
+      // Removo a classe active do da opção TODOS do botão
+      $('.filter-destaque').removeClass('active');
+      // Adiciono a classe active a opção atual do botão
+      $(this).addClass('active');
+
+      // Metiante o type(gênero do filme), chamo a função eachboxes para ocultar ou exibir os cards
+      if (type == 'terror') {
+        // Troco o texto do botão responsável por filtrar as categorias dos filmes. Ex: Categoria + Gênero
+        $('#dropdownCategoria').text('Categoria: Terror');
+        eachBoxes('terror', boxes);
+      } else if (type == 'acao') {
+        $('#dropdownCategoria').text('Categoria: Ação');
+        eachBoxes('acao', boxes);
+      } else if (type == 'aventura') {
+        $('#dropdownCategoria').text('Categoria: Aventura');
+        eachBoxes('aventura', boxes);
+      } else if (type == 'romance') {
+        $('#dropdownCategoria').text('Categoria: Romance');
+        eachBoxes('romance', boxes);
+      } else {
+        $('#dropdownCategoria').text('Categoria: Todos');
+        eachBoxes('todos', boxes);
+      }
+    })
+
+    // Função responsável por mostrar/ocultar os cards DESTAQUES mediante o type(gênero do filme)
+    function eachBoxes(type, boxes) {
+      if (type == 'todos') {
+        $(boxes).fadeIn();
+      } else {
+        $(boxes).each(function () {
+          if (!$(this).hasClass(type)) {
+            $(this).fadeOut();
+          } else {
+            $(this).fadeIn();
+          }
+        })
+      }
+    }
+
+    // Função responsável por mostrar/ocultar os cards da section DESTAQUES
+    function mostrarMaisMenosDestaques() {
+      // Se o texto do botão for Mostrar Mais, entra da função e mostra os cards ocultos
+      if ($('#expandirDestaques').text() == 'Mostrar Mais') {
+        // Remove a classe d-none(classe que oculta os cards)
+        $('.ocultar-destaques').removeClass('d-none');
+        // Adiciona o efeito fadeIn em todos os cards que contenham a classe card-destaque, exibe os mesmos
+        $('.card-destaque').fadeIn();
+        // Troca o texto do botão para Mostrar Menos
+        $('#expandirDestaques').text('Mostrar Menos');
+        // Remove a classe active do botão responsável por filtrar a categoria
+        $('.filter-destaque').removeClass('active');
+        // Adiciona a classe active a opção todos do botão de filtrar a categoria
+        $('#todos').addClass('active');
+        // Troco o texto do botão responsável por filtrar as categorias dos filmes. Ex: Categoria + Gênero
+        $('#dropdownCategoria').text('Categoria: Todos');
+      } else {
+        // Se o texto do botão for Mostrar Mais entra na função
+        // Adiciono a classe d-none e oculto os cards
+        $('.ocultar-destaques').addClass('d-none');
+        // Troco o texto do botão para Mostrar Mais
+        $('#expandirDestaques').text('Mostrar Mais');
+      }
+    }
+
+    // Função por exibir/ocultar os cards AVALIAÇÕES
+    // As explixações para as funções seguem os mesmo padrões explicados enteriormente
+    function mostrarMaisMenosAvaliacoes() {
+      if ($('#expandirAvaliacoes').text() == 'Mostrar Mais') {
+        $('.ocultar-avaliacao').removeClass('d-none');
+        $('.card-avaliacao').fadeIn();
+        $('#expandirAvaliacoes').text('Mostrar Menos');
+      } else {
+        $('.ocultar-avaliacao').addClass('d-none');
+        $('#expandirAvaliacoes').text('Mostrar Mais');
+      }
+    }
+
+    // Função por exibir/ocultar os cards ENTREVISTAS
+    // As explixações para as funções seguem os mesmo padrões explicados enteriormente
+    function mostrarMaisMenosEntrevistas() {
+      if ($('#expandirEntrevistas').text() == 'Mostrar Mais') {
+        $('.ocultar-entrevista').removeClass('d-none');
+        $('.card-entrevista').fadeIn();
+        $('#expandirEntrevistas').text('Mostrar Menos');
+      } else {
+        $('.ocultar-entrevista').addClass('d-none');
+        $('#expandirEntrevistas').text('Mostrar Mais');
+      }
+    }
+
+    // Função responsável por fazer funcionar a caixa de busca da navbar
+    $(document).ready(function () {
+      // Quando entra conteudo na caixa de pesquisa, entra na função
+      $("#navFiltro").on("keyup", function () {
+        // Acessa o link que faz redirecionar a página para os cards de Destaques
+        $('#btnDestaque').click();
+        // Seto o type com o conteudo da caixa de pesquisa
+        var type = $(this).val().toLowerCase();
+        // seto os boxes com todos os cards que possuem a classe card-destaque
+        let boxes = $('.card-destaque');
+
+        // As funções abaixo seguem os mesmos padrões das funções responsáveis por filtrar as categorias dos cards DESTAQUES
+        if (type == 'terror') {
+          eachBoxes('terror', boxes);
+          $('.alert').addClass('d-none');
+        } else if (type == 'acao') {
+          eachBoxes('acao', boxes);
+          $('.alert').addClass('d-none');
+        } else if (type == 'aventura') {
+          eachBoxes('aventura', boxes);
+          $('.alert').addClass('d-none');
+        } else if (type == 'romance') {
+          eachBoxes('romance', boxes);
+          $('.alert').addClass('d-none');
+        } else if (type == 'todos') {
+          eachBoxes('todos', boxes);
+          $('.alert').addClass('d-none');
+        } else if (type == '') {
+          $('.card-destaque').fadeIn();
+          $('.alert').addClass('d-none');
+        } else {
+          $('.alert').removeClass('d-none');
+        }
+      });
+    });
+
+  </script><!-- Fim das funções JavaScripts -->
 
 </body>
 
